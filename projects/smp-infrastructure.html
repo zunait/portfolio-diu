@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dedicated SMP & Multiplayer Server Infrastructure — Case Study by Zunait Hossain Ratul." />
+  <title>Dedicated SMP Infrastructure — Zunait Hossain Ratul</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="../assets/favicon.jpg" />
+
+  <!-- Google Fonts: Inter + Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation (Modern Clean Style) -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html#projects" class="nav-logo" aria-label="Home">
+        <span class="logo-box">Zunait.dev</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link active">Projects</a>
+        <a href="../index.html#education" class="nav-link">Academics</a>
+        <a href="../index.html#certifications" class="nav-link">Honors</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button id="themeToggleBtn" class="nav-theme-btn" aria-label="Toggle Theme">
+        <span class="theme-icon">☀</span>
+      </button>
+    </div>
+  </nav>
+
+  <main style="padding-top: calc(var(--navbar-h) + 2rem);">
+    <!-- Project Hero Header -->
+    <section class="section reveal" style="min-height: auto; padding: 40px 0 2rem 0;">
+      <div class="container">
+        <a href="../index.html#projects" class="btn btn-secondary" style="margin-bottom: 2rem;">
+          &larr; Back to All Projects
+        </a>
+        <div class="hero-content">
+          <p class="hero-label mono">LINUX SERVER ADMIN &bull; PAPERMC &bull; GAME NETWORKING &bull; PERFORMANCE TUNING</p>
+          <h1 class="hero-name" style="font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 1rem;">
+            Dedicated SMP Infrastructure
+          </h1>
+          <p class="hero-desc" style="max-width: 750px;">
+            A high-uptime dedicated survival multiplayer Minecraft environment running on Linux. Features custom gameplay modifications, fine-tuned JVM garbage collection, automated backup pipelines, and solid 20 TPS performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview & Stats -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2 class="section-title">Overview</h2>
+        </div>
+        <div class="about-text" style="max-width: 800px; line-height: 1.8;">
+          <p style="margin-bottom: 1.25rem;">
+            Hosting an engaging multiplayer server requires more than just clicking "start". This project involved setting up and administering a private, dedicated Linux game server that supported around 10 active concurrent players exploring heavily customized survival multiplayer worlds.
+          </p>
+          <p>
+            The setup was built to eliminate lag and prevent data loss. It utilized a tuned PaperMC server engine, custom items and survival mechanics, secure remote administrative access over SSH, cron-automated off-site backups, and fine-tuned Aikar JVM flags to maintain an uncompromised 20 ticks per second (TPS).
+          </p>
+        </div>
+
+        <div class="stats-grid" style="margin-top: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="stat-card reveal">
+            <span class="stat-number">20.0</span>
+            <span class="stat-label mono">Consistent TPS Uptime</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">Linux</span>
+            <span class="stat-label mono">Host Operating System</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">PaperMC</span>
+            <span class="stat-label mono">Optimized High-Tick Core</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">Auto</span>
+            <span class="stat-label mono">Cron Snapshot Backups</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure Systems -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Infrastructure &amp; Server Tuning</h2>
+        </div>
+        <div class="skills-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Linux Server Administration</h3>
+            <p class="skill-card-desc">
+              Full server provisioning on Linux: non-root execution profiles, SSH key hardening, firewall rules (UFW), and automated startup routines via custom systemd units.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Linux</span>
+              <span class="tag">Systemd</span>
+              <span class="tag">SSH Security</span>
+              <span class="tag">UFW</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">JVM Garbage Collection &amp; TPS Optimization</h3>
+            <p class="skill-card-desc">
+              Configured G1GC memory allocation and Paper chunk generation settings, completely eradicating tick stutter during player exploration and world loading.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">JVM Tuning</span>
+              <span class="tag">G1GC</span>
+              <span class="tag">Chunk Ticking</span>
+              <span class="tag">Paper Config</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Custom Survival Mechanics</h3>
+            <p class="skill-card-desc">
+              Integrated tailored gameplay tweaks, custom item attributes, balanced economy rules, and anti-grief protections without cluttering the native vanilla feel.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Custom Items</span>
+              <span class="tag">Player Economy</span>
+              <span class="tag">Anti-Grief</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Automated Backup &amp; Recovery</h3>
+            <p class="skill-card-desc">
+              Scheduled cron scripts creating hourly compressed tarball world snapshots, preventing corruption and ensuring swift rollback capability in case of unforeseen issues.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Bash Scripting</span>
+              <span class="tag">Cron</span>
+              <span class="tag">Disaster Recovery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Reflection -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0 6rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Key Takeaways</h2>
+        </div>
+        <div class="about-text" style="max-width: 800px; line-height: 1.8;">
+          <p>
+            Managing an active community server provided practical sysadmin experience that goes beyond classroom theory. Diagnosing performance bottlenecks with timing reports, writing shell scripts for automated maintenance, and monitoring network traffic established a solid foundation in Linux infrastructure and production service reliability.
+          </p>
+          <div style="margin-top: 2rem;">
+            <a href="../index.html#projects" class="btn btn-primary">&larr; Back to Selected Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer id="footer" class="modern-footer">
+    <div class="container footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand-block">
+          <div class="footer-brand">
+            <span class="footer-title">Portfolio</span>
+            <span class="footer-badge">DEV</span>
+          </div>
+          <p class="footer-subtitle">
+            Zunait Hossain Ratul &bull; Software Engineering Student
+          </p>
+        </div>
+        <ul class="footer-nav-links">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#education">Academics</a></li>
+          <li><a href="../index.html#certifications">Honors</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom-row">
+        <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+        <a href="#navbar" class="footer-back-to-top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

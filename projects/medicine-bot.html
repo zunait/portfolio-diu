@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Medicine Reminder Bot — Case Study by Zunait Hossain Ratul." />
+  <title>Medicine Reminder Bot — Zunait Hossain Ratul</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="../assets/favicon.jpg" />
+
+  <!-- Google Fonts: Inter + Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation (Modern Clean Style) -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html#projects" class="nav-logo" aria-label="Home">
+        <span class="logo-box">Zunait.dev</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link active">Projects</a>
+        <a href="../index.html#education" class="nav-link">Academics</a>
+        <a href="../index.html#certifications" class="nav-link">Honors</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button id="themeToggleBtn" class="nav-theme-btn" aria-label="Toggle Theme">
+        <span class="theme-icon">☀</span>
+      </button>
+    </div>
+  </nav>
+
+  <main style="padding-top: calc(var(--navbar-h) + 2rem);">
+    <!-- Project Hero Header -->
+    <section class="section reveal" style="min-height: auto; padding: 40px 0 2rem 0;">
+      <div class="container">
+        <a href="../index.html#projects" class="btn btn-secondary" style="margin-bottom: 2rem;">
+          &larr; Back to All Projects
+        </a>
+        <div class="hero-content">
+          <p class="hero-label mono">PYTHON &bull; FLASK &bull; TELEGRAM BOT &bull; SYSTEMD</p>
+          <h1 class="hero-name" style="font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 1rem;">
+            Medicine Reminder Bot
+          </h1>
+          <p class="hero-desc" style="max-width: 750px;">
+            An automated notification service and dashboard that sends daily medicine reminders to family members in Bengali via Telegram, grouped by routine meal schedules and running as a persistent background daemon.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview & Stats -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2 class="section-title">Overview</h2>
+        </div>
+        <div class="about-text" style="max-width: 800px; line-height: 1.8;">
+          <p style="margin-bottom: 1.25rem;">
+            Designed to solve a real family healthcare issue, the <strong>Medicine Reminder Bot</strong> coordinates daily prescriptions across three essential timing sessions: morning (সকাল), noon (দুপুর), and night (রাত). It automatically groups medications by meal conditions (before meal / after meal) so elderly relatives receive straightforward, timely alerts directly on their messaging app.
+          </p>
+          <p>
+            The project pairs the automated Telegram distribution bot with a clean, password-protected web dashboard where family members and caregivers can easily register schedules, add or update medicines, and manage recipient lists without touching the database directly.
+          </p>
+        </div>
+
+        <div class="stats-grid" style="margin-top: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="stat-card reveal">
+            <span class="stat-number">Python</span>
+            <span class="stat-label mono">Core Language</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">Telegram</span>
+            <span class="stat-label mono">Delivery Platform</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">Flask</span>
+            <span class="stat-label mono">Dashboard Web App</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">Systemd</span>
+            <span class="stat-label mono">Daemon / 24/7 Uptime</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features & Architecture -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Key Capabilities</h2>
+        </div>
+        <div class="skills-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Automated Scheduling Engine</h3>
+            <p class="skill-card-desc">
+              Leverages <strong>APScheduler</strong> running asynchronously in the background to dispatch precise session reminders for breakfast, lunch, and dinner timings without blocking HTTP requests.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">APScheduler</span>
+              <span class="tag">Background Workers</span>
+              <span class="tag">Cron Timing</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Telegram Bot Integration</h3>
+            <p class="skill-card-desc">
+              Family members register simply by typing <code>/start</code> in Telegram. Notifications format prescription names, dosages, and instructions clearly in localized Bengali script.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Telegram Bot API</span>
+              <span class="tag">i18n Bengali</span>
+              <span class="tag">Auto-Registration</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Management Web Dashboard</h3>
+            <p class="skill-card-desc">
+              Built with Flask and SQLite, the administrative web panel enables authentication, quick addition of prescriptions, recipient grouping, and timeline adjustments with zero downtime.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Flask</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Session Auth</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Production Server Deployment</h3>
+            <p class="skill-card-desc">
+              Configured as a dedicated Linux <code>systemd</code> background service with automated restart policies upon reboot or failure, and live log diagnostics via <code>journalctl</code>.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Linux</span>
+              <span class="tag">Systemd Daemon</span>
+              <span class="tag">Logging &amp; Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Reflection -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0 6rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Takeaways &amp; Impact</h2>
+        </div>
+        <div class="about-text" style="max-width: 800px; line-height: 1.8;">
+          <p>
+            This project demonstrated how simple, well-structured tools solve daily problems reliably. Developing the scheduling daemon, handling timezone synchronization, and maintaining uninterrupted background processes provided deep hands-on experience in Linux service management and asynchronous Python application engineering.
+          </p>
+          <div style="margin-top: 2rem;">
+            <a href="../index.html#projects" class="btn btn-primary">&larr; Back to Selected Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer id="footer" class="modern-footer">
+    <div class="container footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand-block">
+          <div class="footer-brand">
+            <span class="footer-title">Portfolio</span>
+            <span class="footer-badge">DEV</span>
+          </div>
+          <p class="footer-subtitle">
+            Zunait Hossain Ratul &bull; Software Engineering Student
+          </p>
+        </div>
+        <ul class="footer-nav-links">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#education">Academics</a></li>
+          <li><a href="../index.html#certifications">Honors</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom-row">
+        <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+        <a href="#navbar" class="footer-back-to-top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

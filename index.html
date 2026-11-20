@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zunait Hossain Ratul — Software Engineering Student at DIU. Portfolio showcasing backend systems, CLI tools, and web apps." />
+  <title>Zunait Hossain Ratul — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="assets/favicon.jpg" />
+
+  <!-- Google Fonts: Inter + Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION (Modern Clean Style)
+  ══════════════════════════════════════════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <!-- Brand / Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-box">Zunait.dev</span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="#about"          class="nav-link">About</a>
+        <a href="#skills"         class="nav-link">Skills</a>
+        <a href="#projects"       class="nav-link">Projects</a>
+        <a href="#education"      class="nav-link">Academics</a>
+        <a href="#certifications" class="nav-link">Honors</a>
+        <a href="#contact"        class="nav-link">Contact</a>
+      </div>
+
+      <!-- Theme toggle (right side) -->
+      <button id="themeToggleBtn" class="nav-theme-btn" aria-label="Toggle Theme">
+        <span class="theme-icon">☀</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-inner">
+
+      <!-- Left column: text content -->
+      <div class="hero-text">
+        <p class="hero-label mono">SOFTWARE ENGINEERING STUDENT</p>
+        <h1 class="hero-name">
+          Zunait<br /><span class="accent">Ratul</span>
+        </h1>
+        <p class="hero-desc">
+          Passionate about building high-performance systems, clean CLI
+          applications, and responsive modern web experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="#contact"  class="btn btn-secondary">Get In Touch →</a>
+        </div>
+      </div>
+
+      <!-- Right column: profile photo (Static, Clean, Bottom Border Only) -->
+      <div class="hero-photo">
+        <div class="photo-container">
+          <img
+            src="assets/profile.png"
+            alt="Portrait of Zunait Hossain Ratul"
+            class="profile-img"
+            onerror="this.src='assets/profile.jpg'"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 01 — ABOUT
+  ══════════════════════════════════════════════════ -->
+  <section id="about" class="section reveal">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-num">About Me</span>
+        <h2 class="section-title">About</h2>
+      </div>
+
+      <!-- About body -->
+      <div class="about-body">
+        <div class="about-text">
+          <p>
+            I'm Zunait — a first-year Software Engineering student at Daffodil International University in Dhaka, Bangladesh.
+          </p>
+          <p>
+            I started coding out of curiosity, tinkering with mods and small scripts, and it grew into building things that solve actual problems. Whether it's backend tools, game server infrastructure, automation scripts, or web interfaces, I like keeping code clean, understanding the core fundamentals, and making things work reliably.
+          </p>
+          <div class="about-links">
+            <a href="mailto:251-35-362@diu.edu.bd" class="btn btn-primary">
+              EMAIL ME →
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              SEE PROJECTS →
+            </a>
+          </div>
+        </div>
+
+        <!-- Stats grid -->
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <span class="stat-number">15<span class="accent">+</span></span>
+            <span class="stat-label mono">Projects</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">10<span class="accent">+</span></span>
+            <span class="stat-label mono">Technologies</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">124<span class="accent">+</span></span>
+            <span class="stat-label mono">Problems Solved</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 02 — SKILLS
+  ══════════════════════════════════════════════════ -->
+  <section id="skills" class="section reveal">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-num">What I Know</span>
+        <h2 class="section-title">Skills &amp; Expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Category 1: Web Development -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <h3 class="skill-card-title">Web Development</h3>
+            <span class="skill-card-badge">Frontend &amp; Systems</span>
+          </div>
+          <p class="skill-card-desc">
+            Crafting responsive, accessible web interfaces and modular architectures using semantic standards, modern layouts, and clean DOM manipulation without unnecessary overhead.
+          </p>
+          <div class="skill-card-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">Responsive UI</span>
+            <span class="tag">DOM API</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Python Scripting & Web Scraping -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <h3 class="skill-card-title">Scripting &amp; Web Scraping</h3>
+            <span class="skill-card-badge">Automation &amp; Data</span>
+          </div>
+          <p class="skill-card-desc">
+            Writing robust Python scripts for automated data extraction across dynamic web pages, parsing complex DOMs, structuring datasets, and automating repetitive backend workflows.
+          </p>
+          <div class="skill-card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Web Scraping</span>
+            <span class="tag">DOM Parsing</span>
+            <span class="tag">Data Extraction</span>
+            <span class="tag">Task Automation</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Server Administration & Infrastructure -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <h3 class="skill-card-title">Server Administration</h3>
+            <span class="skill-card-badge">Linux &amp; Systems</span>
+          </div>
+          <p class="skill-card-desc">
+            Configuring, securing, and maintaining dedicated Linux servers, background daemon management via systemd, socket routing, resource monitoring, and ensuring high service availability.
+          </p>
+          <div class="skill-card-tags">
+            <span class="tag">Linux (Ubuntu/Debian)</span>
+            <span class="tag">Systemd Services</span>
+            <span class="tag">Dedicated Hosting</span>
+            <span class="tag">Networking</span>
+            <span class="tag">SSH</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Game Modding & Server Management -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <h3 class="skill-card-title">Game Modding &amp; Server Management</h3>
+            <span class="skill-card-badge">Game Dev &amp; Ops</span>
+          </div>
+          <p class="skill-card-desc">
+            Architected and administered dedicated Minecraft servers with 20 TPS performance. Programmed custom Java plugins (Spigot/Paper) with raycasting ballistics and survival mechanics; created parkour mechanics in Roblox via Lua.
+          </p>
+          <div class="skill-card-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spigot / Paper API</span>
+            <span class="tag">Multiplayer Ops</span>
+            <span class="tag">Lua</span>
+            <span class="tag">Roblox Studio</span>
+          </div>
+        </div>
+
+      </div><!-- /skills-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 03 — PROJECTS
+  ══════════════════════════════════════════════════ -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-num">Selected Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── PROJECT 1: Medicine Reminder Bot ── -->
+        <article class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-screenshot" style="background: linear-gradient(135deg, #0b1926 0%, #132f4c 100%);">
+              <div class="screenshot-placeholder mono" style="color: #ffffff;">
+                <div style="font-size: 1.25rem; font-weight: 700; color: #38bdf8; margin-bottom: 0.35rem;">
+                  💊 Medicine Reminder Bot
+                </div>
+                <span style="opacity: 0.75; font-size: 0.78rem;">[ Telegram Bot &bull; Flask &bull; SQLite &bull; Systemd ]</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">APScheduler</span>
+                <span class="tag">Telegram API</span>
+                <span class="tag">Systemd</span>
+              </div>
+              <h3 class="project-title">Medicine Reminder Bot</h3>
+              <p class="project-desc">
+                Daily medicine reminder service sending localized Bengali alerts (সকাল, দুপুর, রাত) with pre/post-meal grouping, backed by a secure Flask management dashboard and deployed as a Linux systemd daemon.
+              </p>
+
+              <div class="project-links">
+                <a
+                  href="projects/medicine-bot.html"
+                  class="btn btn-primary"
+                >VIEW DETAILS →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 2: QuakeBR — Minecraft Battle Royale ── -->
+        <article class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-screenshot" style="background: linear-gradient(135deg, #241208 0%, #451a03 100%);">
+              <div class="screenshot-placeholder mono" style="color: #ffffff;">
+                <div style="font-size: 1.25rem; font-weight: 700; color: #fb923c; margin-bottom: 0.35rem;">
+                  🎯 QuakeBR — Battle Royale
+                </div>
+                <span style="opacity: 0.75; font-size: 0.78rem;">[ Raycast Ballistics &bull; Java Spigot &bull; Dynamic Queues ]</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spigot API</span>
+                <span class="tag">PaperMC</span>
+                <span class="tag">Raycast Mechanics</span>
+                <span class="tag">Game State Engine</span>
+              </div>
+              <h3 class="project-title">QuakeBR Plugin</h3>
+              <p class="project-desc">
+                Custom Minecraft Battle Royale plugin engineered in Java. Features custom weapon systems with instant raycast sniper ballistics (Railgun), automatic crossbow rifles (AK-47), and dynamic lobby queue state management.
+              </p>
+
+              <div class="project-links">
+                <a
+                  href="projects/quakebr.html"
+                  class="btn btn-primary"
+                >VIEW DETAILS →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 3: Dedicated SMP & Multiplayer Infrastructure ── -->
+        <article class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-screenshot" style="background: linear-gradient(135deg, #062117 0%, #064e3b 100%);">
+              <div class="screenshot-placeholder mono" style="color: #ffffff;">
+                <div style="font-size: 1.25rem; font-weight: 700; color: #4ade80; margin-bottom: 0.35rem;">
+                  ⛏️ Dedicated SMP Infrastructure
+                </div>
+                <span style="opacity: 0.75; font-size: 0.78rem;">[ Linux Dedicated Hosting &bull; Custom Mechanics &bull; 20 TPS ]</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">Linux Admin</span>
+                <span class="tag">PaperMC</span>
+                <span class="tag">Java Modding</span>
+                <span class="tag">Networking</span>
+                <span class="tag">Uptime Optimization</span>
+              </div>
+              <h3 class="project-title">Dedicated Survival Multiplayer Infrastructure</h3>
+              <p class="project-desc">
+                Configured and hosted a low-latency dedicated Linux game server maintaining a consistent 20 TPS for active concurrent players. Engineered tailored survival mode rules, custom item attributes, and automated backup routines.
+              </p>
+
+              <div class="project-links">
+                <a
+                  href="projects/smp-infrastructure.html"
+                  class="btn btn-primary"
+                >VIEW DETAILS →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 4: Healthcare Management System ── -->
+        <article class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-screenshot">
+              <img
+                src="assets/screenshots/hms/main_menu.png"
+                alt="Healthcare Management System CLI Screenshot"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">C</span>
+                <span class="tag">CLI</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">File I/O</span>
+                <span class="tag">RBAC</span>
+              </div>
+              <h3 class="project-title">Healthcare Management System</h3>
+              <p class="project-desc">
+                A console-based Hospital Management System built in C. Featuring structured binary file persistence, role-based access control for doctors and patients, and ANSI-colored interactive CLI navigation.
+              </p>
+
+              <div class="project-links">
+                <a
+                  href="projects/healthcare-management-system.html"
+                  class="btn btn-primary"
+                >VIEW DETAILS →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 5: Perfume E-Commerce ── -->
+        <article class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-screenshot">
+              <img
+                src="assets/screenshots/perfume/Screenshot 2026-01-04 003142.png"
+                alt="Perfume E-Commerce Showcase"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+              <h3 class="project-title">Perfume E-Commerce</h3>
+              <p class="project-desc">
+                Minimalist storefront website for a luxury fragrance line with responsive mobile-first architecture, smooth interactive micro-animations, and pure vanilla web technologies.
+              </p>
+
+              <div class="project-links">
+                <a
+                  href="projects/perfume-ecommerce.html"
+                  class="btn btn-primary"
+                >VIEW DETAILS →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 04 — EDUCATION
+  ══════════════════════════════════════════════════ -->
+  <section id="education" class="section reveal">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-num">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-list">
+
+        <!-- University Education (2025 — Present) -->
+        <div class="edu-card reveal">
+          <div class="edu-meta">
+            <span class="edu-year mono">2025 — Present</span>
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">BSc in Software Engineering</h3>
+            <p class="edu-institution">Daffodil International University (DIU)</p>
+            <p class="edu-note">Department of Software Engineering, Faculty of Science &amp; Information Technology &bull; Dhaka, Bangladesh</p>
+          </div>
+        </div>
+
+        <!-- Higher Secondary Certificate (HSC) -->
+        <div class="edu-card reveal">
+          <div class="edu-meta">
+            <span class="edu-year mono">HSC</span>
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">Higher Secondary Certificate &mdash; Science</h3>
+            <p class="edu-institution">Government Science College</p>
+            <p class="edu-note">Tejgaon, Dhaka, Bangladesh</p>
+          </div>
+        </div>
+
+        <!-- Secondary School Certificate (SSC) -->
+        <div class="edu-card reveal">
+          <div class="edu-meta">
+            <span class="edu-year mono">SSC</span>
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">Secondary School Certificate &mdash; Science</h3>
+            <p class="edu-institution">Dhaka Cantonment Board Adarsha Bidyaniketon</p>
+            <p class="edu-note">Dhaka Cantonment, Dhaka, Bangladesh</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 05 — CERTIFICATIONS
+  ══════════════════════════════════════════════════ -->
+  <section id="certifications" class="section reveal">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-num">Honors & Milestones</span>
+        <h2 class="section-title">Honors &amp; Awards</h2>
+      </div>
+
+      <!-- Certifications cards -->
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon" style="font-size: 1.6rem; margin-bottom: 0.25rem;">🏅</div>
+          <h3 class="cert-title">Dean's Awardee</h3>
+          <p class="cert-issuer">Daffodil International University</p>
+          <p class="cert-date mono">Fall 2025</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon" style="font-size: 1.6rem; margin-bottom: 0.25rem;">📐</div>
+          <h3 class="cert-title">Math Olympiad</h3>
+          <p class="cert-issuer">11th Position</p>
+          <p class="cert-date mono">Mathematics Competition</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon" style="font-size: 1.6rem; margin-bottom: 0.25rem;">💻</div>
+          <h3 class="cert-title">CodeTrap</h3>
+          <p class="cert-issuer">14th Position</p>
+          <p class="cert-date mono">Competitive Programming Contest</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 06 — CONTACT
+  ══════════════════════════════════════════════════ -->
+  <section id="contact" class="section reveal contact-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-num">Get in Touch</span>
+        <h2 class="section-title">Contact.</h2>
+      </div>
+
+      <div class="contact-body-new">
+        <div class="contact-left">
+          <p class="contact-desc">
+            I am available for software engineering internships, technical collaborations,
+            and project inquiries. Feel free to reach out directly.
+          </p>
+
+          <div class="contact-actions">
+            <a href="mailto:251-35-362@diu.edu.bd" class="contact-btn contact-btn-primary">
+              Send Email &rarr;
+            </a>
+            <a
+              href="https://github.com/AmiValoHoteChai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-btn contact-btn-secondary"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              GitHub Profile &#8599;
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span class="contact-info-label">Email</span>
+              <a href="mailto:251-35-362@diu.edu.bd" class="contact-info-value">251-35-362@diu.edu.bd</a>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-label">Location</span>
+              <span class="contact-info-value">Dhaka, Bangladesh</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-label">University</span>
+              <span class="contact-info-value">Daffodil International University</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-label">Program</span>
+              <span class="contact-info-value">BSc in Software Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER (Modern Dot-Grid Style)
+  ══════════════════════════════════════════════════ -->
+  <footer id="footer" class="modern-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Navigation -->
+      <div class="footer-top-row">
+        <!-- Brand Info -->
+        <div class="footer-brand-block">
+          <div class="footer-brand">
+            <span class="footer-title">Portfolio</span>
+            <span class="footer-badge">DEV</span>
+          </div>
+          <p class="footer-subtitle">
+            Zunait Hossain Ratul &bull; Software Engineering Student
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="footer-nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Academics</a></li>
+          <li><a href="#certifications">Honors</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Divider line -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Copyright & Back to Top -->
+      <div class="footer-bottom-row">
+        <p class="footer-copy">
+          &copy; <span id="footer-year">2026</span> All rights reserved.
+        </p>
+        <a href="#hero" class="footer-back-to-top">Back to top &uarr;</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

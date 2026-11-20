@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="QuakeBR Minecraft Battle Royale Plugin — Case Study by Zunait Hossain Ratul." />
+  <title>QuakeBR Plugin — Zunait Hossain Ratul</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="../assets/favicon.jpg" />
+
+  <!-- Google Fonts: Inter + Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation (Modern Clean Style) -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html#projects" class="nav-logo" aria-label="Home">
+        <span class="logo-box">Zunait.dev</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link active">Projects</a>
+        <a href="../index.html#education" class="nav-link">Academics</a>
+        <a href="../index.html#certifications" class="nav-link">Honors</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button id="themeToggleBtn" class="nav-theme-btn" aria-label="Toggle Theme">
+        <span class="theme-icon">☀</span>
+      </button>
+    </div>
+  </nav>
+
+  <main style="padding-top: calc(var(--navbar-h) + 2rem);">
+    <!-- Project Hero Header -->
+    <section class="section reveal" style="min-height: auto; padding: 40px 0 2rem 0;">
+      <div class="container">
+        <a href="../index.html#projects" class="btn btn-secondary" style="margin-bottom: 2rem;">
+          &larr; Back to All Projects
+        </a>
+        <div class="hero-content">
+          <p class="hero-label mono">JAVA &bull; SPIGOT / PAPER API &bull; RAYCASTING &bull; GAME STATE ENGINE</p>
+          <h1 class="hero-name" style="font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 1rem;">
+            QuakeBR Battle Royale
+          </h1>
+          <p class="hero-desc" style="max-width: 750px;">
+            A custom high-action Minecraft Battle Royale plugin engineered in Java. Features custom firearm weapons with instant raycast sniper mechanics, automatic crossbow-based assault rifles, and dynamic lobby queue management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview & Stats -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2 class="section-title">Overview</h2>
+        </div>
+        <div class="about-text" style="max-width: 800px; line-height: 1.8;">
+          <p style="margin-bottom: 1.25rem;">
+            <strong>QuakeBR</strong> merges fast-paced arcade shooter mechanics inspired by classic Quake deathmatches with Minecraft's Battle Royale survival loop. Traditional Minecraft arrow projectiles suffer from travel delay and gravity arcs; QuakeBR overcomes this by utilizing vector mathematics and mathematical raytracing for immediate hitscan calculations.
+          </p>
+          <p>
+            The plugin acts as a comprehensive minigame engine: handling player matchmaking queues, automated countdown timers, game boundary restrictions, real-time elimination tracking, and match victory state transitions without requiring server restarts.
+          </p>
+        </div>
+
+        <div class="stats-grid" style="margin-top: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="stat-card reveal">
+            <span class="stat-number">Java</span>
+            <span class="stat-label mono">Core Language</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">Spigot/Paper</span>
+            <span class="stat-label mono">Server Architecture</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">Raycast</span>
+            <span class="stat-label mono">Hitscan Ballistics</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number">State Machine</span>
+            <span class="stat-label mono">Queue &amp; Match Flow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arsenal & Gameplay Systems -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Weapons &amp; Game Mechanics</h2>
+        </div>
+        <div class="skills-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Railgun (Instant Hitscan Sniper)</h3>
+            <p class="skill-card-desc">
+              Inspired by Quake Arena mechanics. Uses high-frequency vector trajectory sampling to calculate instantaneous hits across long distances, producing laser visual effects and instant impact damage.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Raycast Vector Math</span>
+              <span class="tag">Particle Laser Effects</span>
+              <span class="tag">Damage Multipliers</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">AK-47 (Automatic Weapon System)</h3>
+            <p class="skill-card-desc">
+              Crossbow-derived automatic rifle system with custom fire-rate tick schedulers, recoil dispersion vectors, and custom sound design to simulate tactical shooter combat inside Minecraft.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Burst Fire Scheduler</span>
+              <span class="tag">Recoil Math</span>
+              <span class="tag">Custom Item NBT</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Lobby &amp; Queue Management</h3>
+            <p class="skill-card-desc">
+              Command-driven match flow via <code>/qbr join</code>, <code>/qbr leave</code>, and operator start commands. Manages lobby rosters, countdown sequences, and dynamic spectator routing.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Queue Engine</span>
+              <span class="tag">Countdown Timers</span>
+              <span class="tag">Player State Routing</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card-title">Admin Testing Suite</h3>
+            <p class="skill-card-desc">
+              Equipped with in-game administrative utilities (<code>/get &lt;ak|railgun&gt;</code>) allowing operators to spawn items, calibrate hitboxes, and test damage falloff on the fly.
+            </p>
+            <div class="skill-card-tags">
+              <span class="tag">Command Framework</span>
+              <span class="tag">OP Permissions</span>
+              <span class="tag">Live Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Learnings -->
+    <section class="section reveal" style="min-height: auto; padding: 3rem 0 6rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Technical Takeaways</h2>
+        </div>
+        <div class="about-text" style="max-width: 800px; line-height: 1.8;">
+          <p>
+            Building QuakeBR deepened my knowledge of game math, 3D coordinate vectors, entity bounding boxes, and event-driven architecture in Java. Ensuring that weapon calculations and particle simulations ran smoothly without dropping server ticks was a great exercise in performance-conscious programming.
+          </p>
+          <div style="margin-top: 2rem;">
+            <a href="../index.html#projects" class="btn btn-primary">&larr; Back to Selected Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer id="footer" class="modern-footer">
+    <div class="container footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand-block">
+          <div class="footer-brand">
+            <span class="footer-title">Portfolio</span>
+            <span class="footer-badge">DEV</span>
+          </div>
+          <p class="footer-subtitle">
+            Zunait Hossain Ratul &bull; Software Engineering Student
+          </p>
+        </div>
+        <ul class="footer-nav-links">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#education">Academics</a></li>
+          <li><a href="../index.html#certifications">Honors</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom-row">
+        <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+        <a href="#navbar" class="footer-back-to-top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
